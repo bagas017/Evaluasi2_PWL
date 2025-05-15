@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BagasNews - Portal Berita
 
-## Getting Started
+BagasNews adalah aplikasi web portal berita yang dibangun menggunakan Next.js dan NextAuth (OAuth2) yang memungkinkan pengguna untuk login dengan akun Google dan mengakses berita dari berbagai sumber.
 
-First, run the development server:
+## ✨ Fitur Utama
+
+- Login & logout dengan Google (OAuth2)
+- Menampilkan berita terbaru dari beberapa sumber (API1, API2, API3)
+- Filter berita berdasarkan sumber
+- Pencarian berita berdasarkan judul
+- Desain UI/UX modern dan responsive
+
+## 🚀 Instalasi dan Menjalankan Aplikasi
+
+1. Clone repository:
+
+```bash
+git clone https://github.com/bagas017/Evaluasi2_PWL.git
+cd Evaluasi2_PWL
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Buat file `.env.local` dan isi dengan:
+
+```
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+NEXTAUTH_SECRET=your_random_secret
+NEXTAUTH_URL=http://localhost:3000
+```
+
+4. Jalankan aplikasi:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Buka di browser: [http://localhost:3000/login](http://localhost:3000/login)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Struktur Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app`: Routing dan halaman utama (login, dashboard)
+- `/components`: Komponen UI (navbar, artikel card, dsb.)
+- `/api/news`: API untuk mengambil berita dari berbagai sumber
+- `/public`: Aset publik (logo, gambar default)
 
-## Learn More
+## 🔗 Link
 
-To learn more about Next.js, take a look at the following resources:
+- Github Repository: https://github.com/bagas017/Evaluasi2_PWL
+- Next.js: https://nextjs.org
+- NextAuth.js: https://next-auth.js.org
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Selamat menggunakan BagasNews! 🎉
